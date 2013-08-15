@@ -14,6 +14,7 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
+    
     short int i = 0;
     cout << "i = 0: " << i << endl;
     i = 1;
@@ -29,7 +30,25 @@ int main(int argc, char** argv) {
     i = 65536;
     cout << "i = 65536: " << i << endl;
     i = 65537;
-    cout << "i = 65537: " << i << endl;
+    cout << "i = 65537: " << i << endl << endl;
+    
+    unsigned short int j = 0;
+    cout << "j = 0: " << j << endl;
+    j = 1;
+    cout << "j = 1: " << j << endl;
+    j = 32767;
+    cout << "j = 32767: " << j << endl;
+    j = 32768;
+    cout << "j = 32767: " << j << endl;
+    j = 65534;
+    cout << "j = 65534: " << j << endl;
+    j = 65535;
+    cout << "j = 65535: " << j << endl;
+    j = 65536;
+    cout << "j = 65536: " << j << endl;
+    j = 65537;
+    cout << "j = 65537: " << j << endl;
+            
     return 0;
 }
 
