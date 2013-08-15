@@ -22,7 +22,9 @@ int main(int argc, char** argv) {
     i = 32767, binI = 0b0111111111111111;
     cout << "short i = 32767: " << i << " (" << binI << ")" << endl;
     i = 32768, binI = 0b1000000000000000;
-    cout << "short i = 32767: " << i << " (" << binI << ")" << endl;
+    cout << "short i = 32768: " << i << " (" << binI << ")" << endl;
+    i = 32769, binI = 0b1000000000000001;
+    cout << "short i = 32769: " << i << " (" << binI << ")" << endl;
     i = 65534, binI = 0b1111111111111110;
     cout << "short i = 65534: " << i << " (" << binI << ")" << endl;
     i = 65535, binI = 0b1111111111111111;
@@ -41,7 +43,7 @@ int main(int argc, char** argv) {
     j = 32767;
     cout << "j = 32767: " << j << endl;
     j = 32768;
-    cout << "j = 32767: " << j << endl;
+    cout << "j = 32768: " << j << endl;
     j = 65534;
     cout << "j = 65534: " << j << endl;
     j = 65535;
