@@ -15,20 +15,22 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     
-    short int i = 0;
+    short int i = 0, binI = 0;
     cout << "i = 0: " << i << endl;
-    i = 1;
-    cout << "i = 1: " << i << endl;
-    i = 32767;
-    cout << "i = 32767: " << i << endl;
-    i = 32768;
-    cout << "i = 32767: " << i << endl;
-    i = 65534;
-    cout << "i = 65534: " << i << endl;
-    i = 65535;
-    cout << "i = 65535: " << i << endl;
+    i = 1, binI = 0b0000000000000001;
+    cout << "short i = 1: " << i << " (" << binI << ")" << endl;
+    i = 32767, binI = 0b0111111111111111;
+    cout << "short i = 32767: " << i << " (" << binI << ")" << endl;
+    i = 32768, binI = 0b1000000000000000;
+    cout << "short i = 32767: " << i << " (" << binI << ")" << endl;
+    i = 65534, binI = 0b1111111111111110;
+    cout << "short i = 65534: " << i << " (" << binI << ")" << endl;
+    i = 65535, binI = 0b1111111111111111;
+    cout << "short i = 65535: " << i << " (" << binI << ")" << endl;
+    // 0b1111111111111111 + 0b1 = 0b0000000000000000
     i = 65536;
     cout << "i = 65536: " << i << endl;
+    // 0b1111111111111111 + 0b10 = 0b0000000000000001
     i = 65537;
     cout << "i = 65537: " << i << endl << endl;
     
